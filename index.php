@@ -1,7 +1,7 @@
 <?php
 include './source/connect.php'
 ?>
-<html class="m-50">
+<html class="mx-15 my-10">
 
 <head>
     <link rel="stylesheet" href="./source/css/style.css">
@@ -9,7 +9,7 @@ include './source/connect.php'
     <link rel="stylesheet" href="https://cdn.datatables.net/2.3.7/css/dataTables.dataTables.css" /><!--datatables pour avoir un tableau propre-->
 </head>
 
-<body class="border rounded p-2">
+<body class="border rounded p-1">
     <!-- le tableau-->
     <table id="jv_table" class="display">
         <thead>
@@ -41,16 +41,16 @@ include './source/connect.php'
                     <td><?= $jeu['commentaires'] ?></td>
                     <td><?= $jeu['date_vente'] ?></td>
                     <td>
-                        <a href="./source/delete.php?id=<?= $jeu['ID'] ?>" id="btn-delete" onclick="return confirm('Voulez-vous vraiment supprimer ce jeu ?')">Supprimer</a>
+                        <a class="border rounded p-1 bg-red-500" href="./source/delete.php?id=<?= $jeu['ID'] ?>" id="btn-delete" onclick="return confirm('Voulez-vous vraiment supprimer ce jeu ?')">Supprimer</a>
                     </td>
                     <td>
-                        <a href="./source/update.php?id=<?= $jeu['ID'] ?>" id="btn-update">Modifier</a>
+                        <a class="border rounded p-1 bg-sky-500" href="./source/update.php?id=<?= $jeu['ID'] ?>" id="btn-update">Modifier</a>
                     </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-    <button class="my-5 rounded border px-4 py-2"><a href="./source/create.php">Ajouter un jeu</a></button>
+    <button class="my-5 rounded border px-4 py-2 bg-emerald-500"><a href="./source/create.php">Ajouter un jeu</a></button>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--dependance de datatables, sert a faciliter la manipulation du DOM de base-->
