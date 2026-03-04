@@ -44,7 +44,7 @@ $jeu = $stmt->fetch();
                     <td><input type="text" name="commentaires" value="<?php echo $jeu['commentaires'] ?>"></td>
                 </tr>
             </table>
-            <button class="my-5 rounded border px-4 py-2" type="submit">Modifier</button>
+            <button class="my-5 rounded border px-4 py-2 bg-emerald-500" type="submit">Modifier</button>
         </form>
     </div>
 </body>

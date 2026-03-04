@@ -35,7 +35,7 @@
                     <td><input type="text" name="commentaires" value=""></td>
                 </tr>
             </table>
-            <button class="my-5 rounded border px-4 py-2" type="submit">Ajouter</button>
+            <button class="my-5 rounded border px-4 py-2 bg-emerald-500" type="submit">Ajouter</button>
         </form>
     </div>
 </body>
